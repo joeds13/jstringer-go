@@ -1,7 +1,7 @@
 FROM 145351228327.dkr.ecr.eu-west-1.amazonaws.com/ubuntu16:0.3.0
 MAINTAINER Joe Stringer <joe@stringer.sh>
 ENV GOPATH=/opt/go
-ENV PATH=$PATH:/usr/local/go/bin
+ENV PATH=$PATH:/usr/local/go/bin:/opt/go/bin
 RUN mkdir -p /opt/go/bin && \
     mkdir -p /opt/go/pkg && \
     mkdir -p /opt/go/src
